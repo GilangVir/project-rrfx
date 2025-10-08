@@ -35,3 +35,711 @@ body {
   max-width: 100% !important;
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
 }
+
+@media (min-width: 991px) {
+  .btn-navbar-sm {
+    /* tombol masuk versi kecil */
+    display: none !important;
+  }
+  .btn-akun-collapse {
+    /* tombol buka akun versi humburger */
+    display: none !important;
+  }
+}
+
+/* Saat layar kecil (≤990px): tampilkan tombol masuk di navbar, dan tombol buka akun di humburger */
+@media (max-width: 990px) {
+  .btn-navbar-lg {
+    /* tombol besar di kanan navbar */
+    display: none !important;
+  }
+}
+
+/* link ini menghilangkan garis bawah.(khusu menu yang ada di navbar) */
+.no-underline {
+  text-decoration: none;
+  color: inherit;
+}
+
+.no-underline:hover {
+  text-decoration: none;
+}
+
+/* menu bagian navbar jika di hover maka muncul */
+/* Mega menu styling */
+.mega-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 600px;
+  background: #fff;
+  border-radius: 12px;
+  z-index: 999;
+}
+
+.nav-item.dropdown:hover .mega-menu {
+  display: block;
+}
+
+/* Hilangkan panah default dropdown Bootstrap */
+.nav-link.dropdown-toggle::after {
+  display: none;
+}
+
+.jumbotronn {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 30px;
+  border-top: 8px solid transparent;
+  border-image: linear-gradient(90deg, #fdb750 0%, #f59e0b 100%) 1;
+  border-image-slice: 1 0 0 0;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  padding: 4rem 4rem 2rem;
+  position: relative;
+}
+
+.jumbotronn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 8px;
+  background: linear-gradient(90deg, #fdb750 0%, #f59e0b 100%);
+  border-radius: 30px 30px 0 0;
+}
+
+.content-wrapper {
+  text-align: center;
+}
+/* menu bagian navbar jika di hover maka muncul */
+
+/* tampilan bg teks tanpas batas */
+.jumbotronn h1 {
+  color: #1a1a1a;
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.jumbotronn p {
+  color: #6b7280;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-bottom: 2.5rem;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 2rem;
+}
+
+.btn-demo {
+  background: btn btn-warning;
+  color: #1a1a1a;
+  font-size: 1.1rem;
+  font-weight: 700;
+  padding: 1rem 2.5rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(245, 158, 11, 0.3);
+  margin-bottom: 3rem;
+}
+
+.btn-demo:link,
+.btn-demo:visited {
+  color: #1a1a1a;
+}
+
+.btn-demo:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(245, 158, 11, 0.4);
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  color: #1a1a1a;
+}
+
+.btn-demo:active {
+  transform: translateY(0);
+}
+
+.arrow {
+  font-size: 1.3rem;
+  transition: transform 0.3s ease;
+}
+
+.btn-demo:hover .arrow {
+  transform: translateX(4px);
+}
+
+.footer-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.social-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.social-section h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #000000;
+  margin: 0;
+}
+
+.social-icons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.social-icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #1a1a1a;
+  transition: all 0.3s ease;
+  font-size: 1.2rem;
+}
+
+.social-icon:hover {
+  background: #d1d5db;
+  transform: translateY(-2px);
+}
+
+.app-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.app-section h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+.app-buttons {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.app-button {
+  height: 45px;
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.app-button:hover {
+  transform: translateY(-2px);
+}
+
+.app-button img {
+  height: 100%;
+  width: auto;
+}
+
+@media (max-width: 1024px) {
+  .footer-section {
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 1rem;
+  }
+
+  .jumbotronn {
+    padding: 3rem 2rem 1.5rem;
+  }
+
+  .jumbotronn h1 {
+    font-size: 1.8rem;
+  }
+
+  .jumbotronn p {
+    font-size: 0.95rem;
+    padding: 0 1rem;
+  }
+
+  .btn-demo {
+    font-size: 1rem;
+    padding: 0.875rem 2rem;
+  }
+
+  .social-section,
+  .app-section {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .jumbotronn h1 {
+    font-size: 1.5rem;
+  }
+
+  .jumbotronn p {
+    font-size: 0.9rem;
+  }
+
+  .social-icons {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .app-buttons {
+    flex-direction: column;
+  }
+}
+/* tampilan bg teks tanpas batas */
+
+/* tampilan footer1 */
+.jumbotron-footer1 {
+  background-color: #f8f9fa;
+  padding: 60px 0 40px;
+}
+
+.footer-logo {
+  max-width: 150px;
+}
+
+.info-item i {
+  font-size: 20px;
+  color: #6c757d;
+}
+
+.info-item p {
+  font-size: 14px;
+  color: #495057;
+  line-height: 1.6;
+}
+
+.footer-link {
+  color: #495057;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #fdb913;
+}
+
+.fw-bold {
+  font-size: 15px;
+  color: #212529;
+}
+
+/* halaman deposit (jumbotron2)*/
+.jumbotron2 {
+  padding: 30px 15px 60px;
+  min-height: 400px;
+}
+
+.jumbotron2 .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.jumbotron2 nav {
+  margin-bottom: 40px;
+}
+
+.breadcrumb-link {
+  color: #999;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.breadcrumb-link:hover {
+  color: #666;
+}
+
+.breadcrumb-active {
+  color: #666;
+  font-size: 14px;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: '/';
+  color: #999;
+  padding: 0 8px;
+}
+
+.jumbotron-title {
+  font-size: 1.1rem;
+  font-weight: medium;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
+}
+
+.jumbotron-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: center;
+  margin: 0 auto 2rem;
+  max-width: 900px;
+  color: #333;
+  padding: 0 15px;
+}
+
+.btn-demo {
+  display: inline-block;
+  background-color: #e8b647;
+  color: #000;
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  padding: 12px 40px;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-demo:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(232, 182, 71, 0.3);
+}
+
+.bank-card-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.mb-section {
+  margin-bottom: 60px;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .jumbotron2 {
+    padding: 40px 20px 80px;
+  }
+
+  .jumbotron2 nav {
+    margin-bottom: 50px;
+  }
+
+  .jumbotron-title {
+    font-size: 3rem;
+    margin-bottom: 1.75rem;
+  }
+
+  .jumbotron-description {
+    font-size: 1.1rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .btn-demo {
+    padding: 14px 50px;
+    font-size: 1.1rem;
+  }
+
+  .breadcrumb-link,
+  .breadcrumb-active {
+    font-size: 15px;
+  }
+
+  .mb-section {
+    margin-bottom: 80px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+  .jumbotron2 {
+    padding: 50px 20px 90px;
+  }
+
+  .jumbotron2 nav {
+    margin-bottom: 60px;
+  }
+
+  .jumbotron-title {
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .jumbotron-description {
+    font-size: 1.15rem;
+    margin-bottom: 3rem;
+  }
+
+  .btn-demo {
+    padding: 16px 60px;
+    font-size: 1.125rem;
+  }
+
+  .breadcrumb-link,
+  .breadcrumb-active {
+    font-size: 16px;
+  }
+
+  .mb-section {
+    margin-bottom: 100px;
+  }
+}
+
+/* Large Desktop */
+@media (min-width: 1200px) {
+  .bank-card-img {
+    max-width: 90%;
+  }
+}
+
+/* Mobile Small */
+@media (max-width: 576px) {
+  .jumbotron2 {
+    padding: 20px 10px 40px;
+  }
+
+  .jumbotron2 nav {
+    margin-bottom: 30px;
+  }
+
+  .jumbotron-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .jumbotron-description {
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .btn-demo {
+    padding: 10px 30px;
+    font-size: 0.95rem;
+  }
+
+  .breadcrumb-link,
+  .breadcrumb-active {
+    font-size: 13px;
+  }
+
+  .mb-section {
+    margin-bottom: 40px;
+  }
+}
+/* halaman deposit (jumbotron2)*/
+
+/* jumbotron2 (hal rekening bank) */
+.rekening-bank {
+  padding: 60px 20px;
+  background-color: #fff;
+}
+
+.rekening-bank .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header-section {
+  margin-bottom: 40px;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: #1a1a1a;
+}
+
+.section-description {
+  font-size: 1.1rem;
+  color: #666;
+  margin: 0;
+}
+
+.bank-card {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 16px;
+  padding: 30px;
+  transition: all 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.bank-card:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  transform: translateY(-4px);
+}
+
+.bank-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.bank-logo {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+}
+
+.currency-badge {
+  background-color: #f5f5f5;
+  color: #666;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.bank-body {
+  flex: 1;
+  margin-bottom: 24px;
+}
+
+.account-label {
+  font-size: 0.95rem;
+  color: #888;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.account-number-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.account-number {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #1a1a1a;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.copy-btn {
+  background: #f5f5f5;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.copy-btn:hover {
+  background: #e5e5e5;
+}
+
+.copy-btn:active {
+  transform: scale(0.95);
+}
+
+.copy-btn svg {
+  color: #666;
+}
+
+.bank-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.account-name {
+  font-size: 0.95rem;
+  color: #333;
+  margin: 0;
+  font-weight: 500;
+}
+
+.detail-link {
+  color: #e8b647;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+.detail-link:hover {
+  color: #d4a332;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .rekening-bank {
+    padding: 40px 15px;
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+  }
+
+  .section-description {
+    font-size: 1rem;
+  }
+
+  .bank-card {
+    padding: 24px;
+  }
+
+  .bank-logo {
+    height: 32px;
+  }
+
+  .account-number {
+    font-size: 1.4rem;
+  }
+
+  .bank-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .account-number {
+    font-size: 1.2rem;
+  }
+
+  .bank-card {
+    padding: 20px;
+  }
+}
